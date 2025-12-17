@@ -189,7 +189,15 @@ function createNewElement(obj, form, array) {
  * @param {string} muszakValue az érték, amit a select optionjéből kapunk
  * @returns {string}
  */
-function mapMuszak(muszakValue){
-    console.log(muszakValue);
-    return muszakValue;
+function mapMuszak(muszakValue) {
+    switch (muszakValue) {
+        case "1":
+            return "delelottos";
+        case "2":
+            return "delutanos";
+        case "3":
+            return "ejszakai";
+        default:
+            return "";
+    }
 }
